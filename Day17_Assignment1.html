@@ -1,0 +1,137 @@
+//Create an HTML Page using text formatting tags and some videos from the internet. Use internal styles.
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <!--Title of Web Page-->
+    <title>Glenary's Restaurant</title>
+
+    <!--Applying Internal Css-->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .container h3 {
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .menu-section {
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h4 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Defining division tag for navbar -->
+    <div class="navbar">
+
+    <!--Taking Heading 2 -->    
+        <h2>Glenary's Restaurant</h2>
+
+    <!--Defining division tag-->    
+        <div>
+
+    <!--Using anchor tag -->
+            <a href="#">Menu</a>
+            <a href="#">Popular Dishes</a>
+        </div>
+    </div>
+
+
+    <!--Defining divsion tag-->
+    <div class="container">
+
+    <!--Using Heading tag 3-->    
+        <h3>Menu</h3>
+        <div class="menu-section">
+            <div class="card">
+
+        <!--Using images -->
+                <img src="pizza.jpg" alt="Pizza Supreme">
+                <h4><b>Pizza Supreme</b></h4>
+                <p>Pizza base, mozzarella, bacon, onion, bell sauce, capsicum, pepperoni, mushrooms, olives</p>
+                <p><b>Price:</b> ₹250</p>
+            </div>
+
+            <div class="card">
+
+        <!--Using images -->
+                <img src="panner.jpg" alt="Paneer Tikka ">
+                <h4><b>Paneer Tikka </b></h4>
+                <p>Paneer, Yogurt, Ground Spices, Bell Peppers, Onions, Baby Corn, Mushrooms</p>
+                <p><b>Price:</b> ₹300</p>
+            </div>
+        </div>
+
+
+    <!--Using Heading tag 3-->
+        <h3>Watch Popular Dishes Being Made!</h3>
+
+    <!--Adding video -->    
+        <iframe src="https://www.youtube.com/embed/1-SJGQ2HLp8" allowfullscreen></iframe>
+    </div>
+
+
+    </div>
+
+</body>
+</html>
